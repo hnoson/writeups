@@ -1,3 +1,3 @@
 # CTF writeups
 
-CTF writeups including past contests.
+CTF writeups
