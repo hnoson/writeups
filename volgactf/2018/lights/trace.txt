@@ -1,0 +1,389 @@
+execve("./lights", ["./lights"], [/* 43 vars */]) = 0
+brk(0)                                  = 0x1f75000
+uname({sys="Linux", node="raspberrypi", ...}) = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76f90000
+access("/etc/ld.so.preload", R_OK)      = 0
+open("/etc/ld.so.preload", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=42, ...}) = 0
+mmap2(NULL, 42, PROT_READ|PROT_WRITE, MAP_PRIVATE, 3, 0) = 0x76f8f000
+close(3)                                = 0
+open("/usr/lib/arm-linux-gnueabihf/libarmmem.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0h\5\0\0004\0\0\0"..., 512) = 512
+lseek(3, 17960, SEEK_SET)               = 17960
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+lseek(3, 17696, SEEK_SET)               = 17696
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\3\f\1\22\4\24"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0644, st_size=18920, ...}) = 0
+mmap2(NULL, 83236, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76f4e000
+mprotect(0x76f53000, 61440, PROT_NONE)  = 0
+mmap2(0x76f62000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x76f62000
+mprotect(0x7eb86000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC|PROT_GROWSDOWN) = 0
+close(3)                                = 0
+munmap(0x76f8f000, 42)                  = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=89310, ...}) = 0
+mmap2(NULL, 89310, PROT_READ, MAP_PRIVATE, 3, 0) = 0x76f38000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0L\204\1\0004\0\0\0"..., 512) = 512
+lseek(3, 1239936, SEEK_SET)             = 1239936
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2840) = 2840
+lseek(3, 1236500, SEEK_SET)             = 1236500
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\23\1\24"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0755, st_size=1242776, ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76f8f000
+mmap2(NULL, 1312152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76df7000
+mprotect(0x76f22000, 65536, PROT_NONE)  = 0
+mmap2(0x76f32000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12b000) = 0x76f32000
+mmap2(0x76f35000, 9624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76f35000
+close(3)                                = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76f8e000
+set_tls(0x76f8e4c0, 0x76f8eba8, 0x76f93050, 0x76f8e4c0, 0x76f93050) = 0
+mprotect(0x76f32000, 8192, PROT_READ)   = 0
+mprotect(0x76f4e000, 20480, PROT_READ|PROT_WRITE) = 0
+mprotect(0x76f4e000, 20480, PROT_READ|PROT_EXEC) = 0
+cacheflush(0x76f4e000, 0x76f53000, 0, 0x15, 0x7eb85ec0) = 0
+mprotect(0x76f92000, 4096, PROT_READ)   = 0
+munmap(0x76f38000, 89310)               = 0
+brk(0)                                  = 0x1f75000
+brk(0x1f96000)                          = 0x1f96000
+open("/proc/device-tree/soc/ranges", O_RDONLY) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=24, ...}) = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76f8d000
+_llseek(3, 0, [0], SEEK_SET)            = 0
+read(3, "~\0\0\0", 4)                   = 4
+read(3, "?\0\0\0\1\0\0\0@\0\0\0@\0\0\0\0\4\0\0", 4096) = 20
+_llseek(3, 24, [24], SEEK_SET)          = 0
+close(3)                                = 0
+munmap(0x76f8d000, 4096)                = 0
+geteuid32()                             = 1000
+open("/dev/gpiomem", O_RDWR|O_SYNC)     = 3
+mmap2(NULL, 16777216, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x75df7000
+close(3)                                = 0
+V
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+O
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+L
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+G
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+A
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+C
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+T
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+F
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+W
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+I
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+T
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+H
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+A
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+B
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+L
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+I
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+N
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+K
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+O
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+F
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+A
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+N
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+E
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+Y
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+E
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+Y
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+O
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+U
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+F
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+I
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+N
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+A
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+L
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+L
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+Y
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+S
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+E
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+E
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+T
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+H
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+E
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+L
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+I
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+G
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+H
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 250000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+T
+nanosleep({0, 750000000}, NULL)         = 0
+nanosleep({0, 750000000}, NULL)         = 0
+
+nanosleep({0, 75000000}, NULL)         = 0
+munmap(0x75df7000, 16777216)            = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
