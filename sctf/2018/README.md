@@ -123,7 +123,7 @@ function withdraw(uint256 value) public{
     }
 ```
 
-## dingJMax
+## dingJMax [Reversing 106pts]
 First of all, we need to extract the patterns. They are at `0x603280` according to `0x401675`. 
 ```
 gdb-peda$ x/10gx 0x603280 + 0x120
