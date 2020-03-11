@@ -4,7 +4,7 @@ import re
 qr = [list(line.strip()) for line in open('./encrypted.qr')]
 for key in open('./key'):
     op, col, row = map(int, re.search('(\d*)#\((\d*),(\d*)', key).groups())
-    
+
     if op == 0:
         qr[row][col], qr[row][col-1] = qr[row][col-1], qr[row][col]
     elif op == 1:
